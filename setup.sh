@@ -23,7 +23,9 @@ ENV="NODE_ENV=development\n\
 NEXTAUTH_SECRET=$NEXTAUTH_SECRET\n\
 NEXTAUTH_URL=http://localhost:3000\n\
 OPENAI_API_KEY=$OPENAI_API_KEY\n\
-DATABASE_URL=file:../db/db.sqlite\n"
+DATABASE_URL=file:../db/db.sqlite\n\
+NEXT_PUBLIC_BACKEND_URL=http://localhost:3000\n"
+
 
 cd next
 printf $ENV > .env
